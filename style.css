@@ -5,6 +5,40 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+/* In style.css */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#education ul {
+  list-style: none;
+  padding: 0;
+}
+
+#education li {
+  background: #eef;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 5px solid #1e90ff;
+  border-radius: 5px;
+}
 
 header, footer {
   background-color: #222;
